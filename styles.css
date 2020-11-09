@@ -1,8 +1,12 @@
 ﻿/*General CSS*/
+
 body {
 	background-color: #FFCC66;
 	margin: 0;
 	padding: 0;
+}
+body,html{
+	height: 100%;
 }
 nav {
 	display: flex;
@@ -21,6 +25,8 @@ nav {
 	padding-top: 0px;
 	z-index: 1;
 	transition: 0.5s;
+	border-right:thin black ridge;
+
 }
 .cSidebar a {
 	color: white;
@@ -36,13 +42,15 @@ nav {
 
 .openButton {
 	padding: 22px 35px;
-	background-color: transparent;
 	color: black;
 	font-size: 30px;
 	border: none;
 	outline: none;
 	transition:0.3s;
 	border-radius:1rem;
+	background-color:transparent;
+	border:thin black solid;
+
 }
 
 #sidebar a:hover {
@@ -52,13 +60,14 @@ nav {
 }
 .openButton:hover {
 		cursor: pointer;
+		background-color:#CC6600;
 
 }
 
 .openButton:active {
-	background-color:#CC6600;
+	
 }
-/*ADDED - CSS for sidebar recipe options. Just made them smaller and more indented than the rest of the options on the sidebar */
+CSS for sidebar recipe options. Just made them smaller and more indented than the rest of the options on the sidebar */
 #recipeOpt a{
 	font-size:25px;
 	padding:13px 8px 13px 60px;
@@ -104,6 +113,50 @@ nav {
 #navButton:hover{
 	background-color:#CC6600;
 }
+
+/*CSS for Sign in Page*/
+#signInForm{
+    width:350px;
+	margin:4% auto;
+	padding:15px;
+	background-color:#FF9933;
+	border-radius:1rem;
+	border:thin black ridge;
+}
+
+#signInFormHeader{
+	text-align:center;
+	margin-bottom:20px;
+}
+#formButton{
+	margin:10px 0;;
+    padding:10px 25px;
+    background-color:transparent;
+    border:thin black solid;
+    font-size:15px;
+    color:black;
+}
+#formButton:hover{
+	background-color: #CC6600;	
+	cursor: pointer
+}
+#formLogo{
+	width:89.25px;
+	height:100%;
+}
+
+a{
+	color:#FF3300
+}
+a:hover{
+	color:#993300
+}
+
+#signInBackground{
+	background-image:url('pastaBackground.jpg');
+	background-size:cover;
+}
+
 
 /*CSS of footer*/
 
